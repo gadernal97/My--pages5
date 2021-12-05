@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --cor1:#5F6156;
+    --cor2:#D1E687;
+    --cor3:#f1f1ef;
+    --cor4:#64665C;
+    --cor5:#A9AD9A;
+    --fontM:'Roboto';
+    --fontP:'Roboto Condensed';
+    --fontH:'Poppins';
+}
+body{
+    background-color: var(--cor3);
+}
+#menu ul{
+    list-style: none;
+    background-color: var(--cor3);
+    border-bottom: solid var(--cor1) 5px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+    font-family: var(--fontM);
+    font-size: 1.4rem;
+}
+#menu ul li{display: inline;}
+#menu ul li a{
+    text-decoration: none;
+    color: var(--cor4);
+    padding: 2px 10px;
+    float: left;
+    
+}
+#menu ul li a:hover{
+    color: var(--cor2);
+    border-bottom: 3px solid var(--cor5);
+}
+header{
+    padding: 10px;
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    font-family: var(--fontH);
+   
+}
+header img{
+margin-left: auto;
+margin-right: auto;
+display: block;
+max-width: 100%;
+min-width: 60%;
+
+}
+main{
+    width: 1000px;
+    margin: auto;
+    padding: 10px;
+    font-family: var(--fontP);
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+main ul{
+    list-style-position: inside;
+    list-style-image: url(trofeu.png);
+}
+main img{
+    width: 100%;
+}
+main img.img{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+}
+main img.img1{
+    width: 50%;
+    margin-right: auto;
+    padding: 10px;
+    display: block;
+}
+main img.img2{
+    width: 50%;
+    padding: 10px;
+}
+#video{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom:30px
+}
+#video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+}
+footer{
+    background-color: var(--cor1);
+}
+footer  p {
+    text-align: center ;
+}
+footer a{
+    text-align: center;
+}
+footer ul{
+    list-style-position: inside;
+    list-style-image: url(instagram.png);
+}
+footer ul a{
+    text-decoration: none;
+    color: var(--cor2);
+    padding: 10px;
+    font-family: var(--fontP);
+}
+@media screen and (min-device-width:280px) {
+    body{
+        background-color: var(--cor3);
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    main{
+        width: 80%;
+    }
+    footer{
+        width: 100%;
+    }
+}
